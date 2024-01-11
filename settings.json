@@ -1,0 +1,15 @@
+{
+  "locofyConfig": {
+    "project_name": "portfolio",
+    "id": "6585562844f44937f7ed1d53",
+    "framework": "html-css",
+    "typescript": false,
+    "path": "public/",
+    "componentsPath": "c:\\Users\\Vinay\\Desktop\\c\\src\\components",
+    "screensPath": "c:\\Users\\Vinay\\Desktop\\c\\src\\pages",
+    "styling": "CSS",
+    "unit": "rem",
+    "naming": "Kebab Case"
+  },
+  "liveServer.settings.port": 5501
+}
