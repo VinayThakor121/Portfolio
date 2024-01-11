@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Serif:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto Serif:wght@300;400;500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" />
+</head>
+
+<body>
+  <header>
+    <div class="header-1">
+      <div class="nav-left" id="nav-left">
+        <div class="vt" id="vt">
+          <span class="vt1" id="Vt">VT</span>
+        </div>
+        <span class="vinay-thakor" id="vinaythakor">VINAY THAKOR</span>
+      </div>
+      <div class="nav-right--">
+        <button class="nav-right-button" onclick="" id="nav-right-button">
+          <div class="nav-right-button-child R1"></div>
+          <div class="nav-right-button-child R2"></div>
+          <div class="nav-right-button-child R3"></div>
+        </button>
+        <nav class="nav-right">
+          <ul class="nav-right-1" id="nav-right-1">
+            <li onclick="myfunction()"><a href="#h2" class="home" id="home">
+                <span class="home1" id="home">HOME</span>
+              </a></li>
+            <li onclick="myfunction()"><a href="#p2" class="home" id="project">
+                <span class="home1" id="project">PROJECT</span>
+              </a></li>
+            <li onclick="myfunction()"><a href="#c2" class="home" id="contact">
+                <span class="home1" id="contact">CONTACT</span>
+              </a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+    </div>
+  </header>
+
+  <main class="macbook-pro-14-4" onclick="myfunction()" id="portfolio">
+
+    <section id="h2" class="home2" id="home">
+      <div class="home-1" id="home-1">
+        <div class="intro" id="intro" data-animate-on-scroll>
+          <div class="heyth" id="heyth">
+            <span class="hey-there" id="heythere!">hey there !</span>
+            <img class="pngegg-2-1" alt="" src="./public/peace@2x.png" />
+          </div>
+          <div class="intro-1" id="intro-1">
+            <div class="webd" id="webd">
+              <h2 class="i-am" id="iam">i am</h2>
+              <h2 class="web-designer" id="webdesign">WEB DESIGNER</h2>
+              <h2 class="i-am" id="and">&</h2>
+              <h2 class="web-designer" id="webd">WEB DEVELOPER</h2>
+            </div>
+            <span class="passionate-about-learning" id="passionateAbout">Passionate about learning and creating new
+              thing</span>
+          </div>
+        </div>
+        <img class="hero-icon" alt="" src="./public/hero@2x.png" />
+      </div>
+    </section>
+    <section id="p2" class="project2" id="project">
+      <div class="project-1" id="project-1" data-animate-on-scroll>
+        <div class="linewithp" id="linewithp">
+          <span class="projects" id="projects">PROJECTS</span>
+          <div class="linewithp-child" id="rectangle"></div>
+        </div>
+        <div class="dd" id="dd">
+          <div class="laptop" id="laptop">
+            <img class="macbook-pro-16-inch-space-blac" alt="" src="./public/MacbookPro@2x.png" />
+          </div>
+          <div class="ddintro" id="ddintro">
+            <div class="dd-intro-1" id="ddIntro-1">
+              <div class="ddinto-2" id="ddIntro-2">
+                <span class="dance-delight" id="DanceDelight">Dance Delight</span>
+                <span class="uxui-design" id="ux/ui">UX/UI Design</span>
+              </div>
+              <span class="designing-dancedelights-websi" id="Designing">Designing DanceDelight's website</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="c2" class="contact2" id="Contact">
+      <div class="contact-1" id="Contact-1" data-animate-on-scroll>
+        <div class="contactme" id="ContactMe">
+          <span class="dont-be-a" id="Don'tBe">Don’t Be A Stranger</span>
+          <span class="contact-me" id="ContactMe">Contact Me.</span>
+        </div>
+        <div class="imgworktogether" id="img+worktogether">
+          <div class="worktogetherlink" id="worktogether+link">
+            <span class="lets-work-together" id="Let'sWork">Let’s Work Together. Drop Me A Line.</span>
+            <div class="link" id="Link">
+              <a class="gmail" id="Gmail" href="mailto:vinaythakor890@gmail.com">
+                <img class="icons8-gmail-64-1-1" alt="" src="./public/Gmail-icon@2x.png" />
+              </a>
+              <a class="linkedin" id="linkedin" href="https://www.linkedin.com/in/vinay-thakor-05a2952a5/"
+                target="_blank">
+                <img class="icons8-gmail-64-1-1" alt="" src="./public/linkedin-icon@2x.png" />
+              </a>
+            </div>
+          </div>
+          <img class="workimg-icon" alt="" src="./public/workImg@2x.png" />
+        </div>
+      </div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="copywrite" id="Copywrite">
+        <img class="vector-icon" id="copywrite" alt="" src="./public/copywrite@2x.png" />
+
+        <div class="heyth" id="vinaythakor">
+          <span class="vinay-thakor-2024" id="vinay2024">Vinay Thakor 2024</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+
+    // For slide in animation
+    var scrollAnimElements = document.querySelectorAll(
+      "[data-animate-on-scroll]",
+    );
+    var observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting || entry.intersectionRatio > 0) {
+            const targetElement = entry.target;
+            targetElement.classList.add("animate");
+            observer.unobserve(targetElement);
+          }
+        }
+      },
+      {
+        threshold: 0.15,
+      },
+    );
+
+    for (let i = 0; i < scrollAnimElements.length; i++) {
+      observer.observe(scrollAnimElements[i]);
+    }
+
+
+
+    // For nav up and down
+    const body = document.body;
+    let lastScroll = 0;
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll <= 0) {
+        body.classList.remove("scroll-up");
+        return;
+      }
+
+      if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+        body.classList.remove("scroll-up");
+        body.classList.add("scroll-down");
+      } else if (
+        currentScroll < lastScroll &&
+        body.classList.contains("scroll-down")
+      ) {
+        body.classList.remove("scroll-down");
+        body.classList.add("scroll-up");
+      }
+      lastScroll = currentScroll;
+    });
+
+    // For slide navbar in mobail and tablet
+    const r1 = document.querySelector(".R1");
+    const r2 = document.querySelector(".R2");
+    const r3 = document.querySelector(".R3");
+    const toggleBtn = document.querySelector(".nav-right-button");
+    const closeBtn = document.querySelector(".close-btn");
+    const sidebar = document.querySelector(".nav-right");
+
+    toggleBtn.addEventListener("click", function () {
+
+      sidebar.classList.toggle("show-sidebar");
+      r1.classList.toggle("r11");
+      r2.classList.toggle("r22");
+      r3.classList.toggle("r33");
+
+    });
+
+    function myfunction() {
+      if (sidebar.classList.contains("show-sidebar")) {
+        sidebar.classList.remove("show-sidebar");
+        r1.classList.remove("r11");
+        r2.classList.remove("r22");
+        r3.classList.remove("r33");
+      }
+    }
+
+
+    // For change font size width when screen is greater than 1550
+    const fontSizeFactor = 0.00065;
+
+    function adjustFontSize() {
+      const screenWidth = window.innerWidth;
+      const newFontSize = screenWidth * fontSizeFactor;
+
+      if (screenWidth > 1550) {
+        // Change the font size when the screen width exceeds 1550px
+        document.documentElement.style.fontSize = `${newFontSize}rem`;
+      } else {
+        // Reset to the default font size
+        document.documentElement.style.fontSize = '1rem';
+      }
+    }
+
+    // Initial adjustment on page load
+    window.addEventListener('load', adjustFontSize);
+
+    // Adjust font size on window resize
+    window.addEventListener('resize', adjustFontSize);
+
+  </script>
+</body>
+
+</html>
